@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism UI - Design Moderne Translucide</title>
+    <link rel="stylesheet" href="glassmorphism.css">
+</head>
+<body>
+    <!-- Arrière-plan animé -->
+    <div class="background-container">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+        <div class="gradient-orb orb-5"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+
+    <!-- Header glass -->
+    <header class="glass-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">✨</div>
+                <h1 class="logo-text">GlassUI</h1>
+            </div>
+            
+            <nav class="header-nav">
+                <a href="#dashboard" class="nav-item active">Dashboard</a>
+                <a href="#analytics" class="nav-item">Analytics</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#team" class="nav-item">Team</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="glass-button icon-button" aria-label="Notifications">
+                    <span class="notification-icon">🔔</span>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="glass-button icon-button" aria-label="Messages">
+                    <span class="message-icon">💬</span>
+                </button>
+                <div class="user-avatar">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%236366f1'/%3E%3Ctext x='20' y='25' text-anchor='middle' fill='white' font-size='16' font-family='Arial'%3EJD%3C/text%3E%3C/svg%3E" alt="User Avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+        <!-- Section de bienvenue -->
+        <section class="welcome-section">
+            <div class="glass-card welcome-card">
+                <div class="card-header">
+                    <h2 class="card-title">Bienvenue dans l'avenir</h2>
+                    <p class="card-subtitle">Interface glassmorphism moderne avec effets de transparence</p>
+                </div>
+                <div class="card-content">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-icon">📊</div>
+                            <div class="stat-value">2.4k</div>
+                            <div class="stat-label">Projets actifs</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-value">156</div>
+                            <div class="stat-label">Utilisateurs</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">⚡</div>
+                            <div class="stat-value">98%</div>
+                            <div class="stat-label">Performance</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">🚀</div>
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Lancements</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section de contenu principal -->
+        <div class="content-grid">
+            <!-- Panneau de contrôle -->
+            <section class="dashboard-panel">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Panneau de contrôle</h3>
+                        <button class="glass-button small">⚙️ Paramètres</button>
+                    </div>
+                    <div class="card-content">
+                        <div class="control-grid">
+                            <div class="control-item">
+                                <label for="theme-selector" class="control-label">Thème</label>
+                                <select id="theme-selector" class="glass-select">
+                                    <option value="auto">Automatique</option>
+                                    <option value="light">Clair</option>
+                                    <option value="dark">Sombre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="control-item">
+                                <label for="blur-intensity" class="control-label">Intensité du flou</label>
+                                <input type="range" id="blur-intensity" class="glass-slider" min="0" max="20" value="10">
+                            </div>
+                            
+                            <div class="control-item">
+                                <label for="transparency" class="control-label">Transparence</label>
+                                <input type="range" id="transparency" class="glass-slider" min="0" max="100" value="20">
+                            </div>
+                        </div>
+                        
+                        <div class="toggle-grid">
+                            <label class="glass-toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Animations</span>
+                            </label>
+                            
+                            <label class="glass-toggle">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Mode sombre auto</span>
+                            </label>
+                            
+                            <label class="glass-toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Effets de particules</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Graphiques et données -->
+            <section class="analytics-panel">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Analytics</h3>
+                        <div class="chart-controls">
+                            <button class="glass-button small active">7J</button>
+                            <button class="glass-button small">30J</button>
+                            <button class="glass-button small">3M</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="chart-container">
+                            <div class="chart-placeholder">
+                                <div class="chart-bars">
+                                    <div class="bar" style="height: 60%"></div>
+                                    <div class="bar" style="height: 80%"></div>
+                                    <div class="bar" style="height: 45%"></div>
+                                    <div class="bar" style="height: 90%"></div>
+                                    <div class="bar" style="height: 75%"></div>
+                                    <div class="bar" style="height: 65%"></div>
+                                    <div class="bar" style="height: 85%"></div>
+                                </div>
+                                <div class="chart-overlay">
+                                    <div class="chart-tooltip">📈 +24% cette semaine</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="metrics-row">
+                            <div class="metric">
+                                <span class="metric-label">Vues</span>
+                                <span class="metric-value">12.4k</span>
+                                <span class="metric-change positive">+5.2%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Conversions</span>
+                                <span class="metric-value">389</span>
+                                <span class="metric-change positive">+12.1%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Revenus</span>
+                                <span class="metric-value">€8,920</span>
+                                <span class="metric-change negative">-2.4%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Liste des tâches -->
+            <section class="tasks-panel">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Tâches récentes</h3>
+                        <button class="glass-button small">+ Nouveau</button>
+                    </div>
+                    <div class="card-content">
+                        <div class="task-list">
+                            <div class="task-item completed">
+                                <div class="task-checkbox">✓</div>
+                                <div class="task-content">
+                                    <div class="task-title">Finaliser le design glassmorphism</div>
+                                    <div class="task-meta">Completé il y a 2h</div>
+                                </div>
+                                <div class="task-priority high">Haute</div>
+                            </div>
+                            
+                            <div class="task-item">
+                                <div class="task-checkbox"></div>
+                                <div class="task-content">
+                                    <div class="task-title">Optimiser les performances CSS</div>
+                                    <div class="task-meta">À faire aujourd'hui</div>
+                                </div>
+                                <div class="task-priority medium">Moyenne</div>
+                            </div>
+                            
+                            <div class="task-item">
+                                <div class="task-checkbox"></div>
+                                <div class="task-content">
+                                    <div class="task-title">Tests d'accessibilité</div>
+                                    <div class="task-meta">Échéance demain</div>
+                                </div>
+                                <div class="task-priority low">Basse</div>
+                            </div>
+                            
+                            <div class="task-item">
+                                <div class="task-checkbox"></div>
+                                <div class="task-content">
+                                    <div class="task-title">Documentation utilisateur</div>
+                                    <div class="task-meta">En attente</div>
+                                </div>
+                                <div class="task-priority medium">Moyenne</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notifications et activité -->
+            <section class="activity-panel">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Activité récente</h3>
+                        <button class="glass-button small">Tout voir</button>
+                    </div>
+                    <div class="card-content">
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-avatar">👤</div>
+                                <div class="activity-content">
+                                    <div class="activity-text">
+                                        <strong>Marie Dupont</strong> a rejoint l'équipe design
+                                    </div>
+                                    <div class="activity-time">Il y a 5 minutes</div>
+                                </div>
+                                <div class="activity-type new">Nouveau</div>
+                            </div>
+                            
+                            <div class="activity-item">
+                                <div class="activity-avatar">📝</div>
+                                <div class="activity-content">
+                                    <div class="activity-text">
+                                        Projet <strong>Glass UI</strong> mis à jour
+                                    </div>
+                                    <div class="activity-time">Il y a 1 heure</div>
+                                </div>
+                                <div class="activity-type update">Mis à jour</div>
+                            </div>
+                            
+                            <div class="activity-item">
+                                <div class="activity-avatar">🎯</div>
+                                <div class="activity-content">
+                                    <div class="activity-text">
+                                        Objectif mensuel <strong>90%</strong> atteint
+                                    </div>
+                                    <div class="activity-time">Il y a 3 heures</div>
+                                </div>
+                                <div class="activity-type achievement">Succès</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Section d'actions rapides -->
+        <section class="quick-actions">
+            <div class="glass-card horizontal">
+                <div class="card-content">
+                    <div class="actions-grid">
+                        <button class="action-button">
+                            <div class="action-icon">🔄</div>
+                            <div class="action-label">Synchroniser</div>
+                        </button>
+                        
+                        <button class="action-button">
+                            <div class="action-icon">📊</div>
+                            <div class="action-label">Rapport</div>
+                        </button>
+                        
+                        <button class="action-button">
+                            <div class="action-icon">⚙️</div>
+                            <div class="action-label">Paramètres</div>
+                        </button>
+                        
+                        <button class="action-button">
+                            <div class="action-icon">👥</div>
+                            <div class="action-label">Équipe</div>
+                        </button>
+                        
+                        <button class="action-button">
+                            <div class="action-icon">📈</div>
+                            <div class="action-label">Analytics</div>
+                        </button>
+                        
+                        <button class="action-button">
+                            <div class="action-icon">💡</div>
+                            <div class="action-label">Idées</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sidebar flottante -->
+    <aside class="floating-sidebar">
+        <div class="glass-card">
+            <div class="sidebar-header">
+                <h3>Outils rapides</h3>
+                <button class="collapse-button">⚊</button>
+            </div>
+            <div class="sidebar-content">
+                <div class="tool-section">
+                    <h4>Apparence</h4>
+                    <div class="tool-controls">
+                        <button class="tool-button" data-action="toggle-blur">🌫️ Flou</button>
+                        <button class="tool-button" data-action="toggle-particles">✨ Particules</button>
+                        <button class="tool-button" data-action="change-theme">🎨 Thème</button>
+                    </div>
+                </div>
+                
+                <div class="tool-section">
+                    <h4>Effets</h4>
+                    <div class="tool-controls">
+                        <button class="tool-button" data-action="add-orb">⭕ Orbe</button>
+                        <button class="tool-button" data-action="shake-effect">📳 Shake</button>
+                        <button class="tool-button" data-action="rainbow-mode">🌈 Rainbow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Notifications toast -->
+    <div class="toast-container">
+        <!-- Les notifications seront ajoutées dynamiquement ici -->
+    </div>
+
+    <!-- Bouton flottant principal -->
+    <button class="fab-main" aria-label="Actions principales">
+        <span class="fab-icon">+</span>
+        <div class="fab-menu">
+            <button class="fab-option" data-action="new-project">
+                <span class="fab-option-icon">📁</span>
+                <span class="fab-option-label">Nouveau projet</span>
+            </button>
+            <button class="fab-option" data-action="new-task">
+                <span class="fab-option-icon">📝</span>
+                <span class="fab-option-label">Nouvelle tâche</span>
+            </button>
+            <button class="fab-option" data-action="new-team">
+                <span class="fab-option-icon">👥</span>
+                <span class="fab-option-label">Inviter équipe</span>
+            </button>
+        </div>
+    </button>
+
+    <script src="glassmorphism.js"></script>
+</body>
+</html>
