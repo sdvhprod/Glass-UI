@@ -37,4 +37,4 @@ Contribution
 Voir CONTRIBUTING.md
 
 Remerciements
-Merci à Copilot de m’avoir aidé à écrire le code, et à tous ceux qui partagent leurs idées sur le web !
+Merci à tous ceux qui partagent leurs idées sur le web !
